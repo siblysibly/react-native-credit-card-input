@@ -50,10 +50,10 @@ const s = StyleSheet.create({
     width: INFINITE_WIDTH,
   },
   expiryInput: {
-    width: 80,
+    width: 60,
   },
   cvcInput: {
-    width: 40,
+    width: 50,
   },
   last4Input: {
     width: 60,
