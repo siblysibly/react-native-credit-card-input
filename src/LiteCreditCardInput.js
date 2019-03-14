@@ -181,7 +181,7 @@ export default class LiteCreditCardInput extends Component {
           { requiresPostalCode &&
             <CCInput {...this._inputProps("postalCode")}
               keyboardType="numeric"
-              containerStyle={c.postalInput} /> }
+              containerStyle={s.postalInput} /> }
         </View>
       </View>
     );
