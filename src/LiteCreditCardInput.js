@@ -63,6 +63,9 @@ const s = StyleSheet.create({
     height: 40,
     color: "black",
   },
+  postalInput: {
+    width: 80,
+  },
 });
 
 /* eslint react/prop-types: 0 */ // https://github.com/yannickcr/eslint-plugin-react/issues/106
@@ -139,7 +142,7 @@ export default class LiteCreditCardInput extends Component {
   }
 
   render() {
-    const { focused, values: { number }, inputStyle, status: { number: numberStatus } } = this.props;
+    const { focused, requiresPostalCode, values: { number }, inputStyle, status: { number: numberStatus } } = this.props;
     const showRightPart = focused && focused !== "number";
 
     return (
@@ -175,6 +178,10 @@ export default class LiteCreditCardInput extends Component {
           <CCInput {...this._inputProps("cvc")}
             keyboardType="numeric"
             containerStyle={s.cvcInput} />
+          { requiresPostalCode &&
+            <CCInput {...this._inputProps("postalCode")}
+              keyboardType="numeric"
+              containerStyle={c.postalInput} /> }
         </View>
       </View>
     );
