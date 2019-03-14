@@ -41,9 +41,9 @@ const s = StyleSheet.create({
   rightPart: {
     overflow: "hidden",
     flexDirection: "row",
+    justifyContent: 'space-between',
   },
   last4: {
-    flex: 1,
     justifyContent: "center",
   },
   numberInput: {
