@@ -53,7 +53,7 @@ const s = StyleSheet.create({
     width: 80,
   },
   cvcInput: {
-    width: 80,
+    width: 40,
   },
   last4Input: {
     width: 60,
@@ -64,7 +64,7 @@ const s = StyleSheet.create({
     color: "black",
   },
   postalInput: {
-    width: 80,
+    width: 50,
   },
 });
 
